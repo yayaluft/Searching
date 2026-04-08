@@ -6,7 +6,10 @@ public class MahasiswaDemo10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         MahasiswaBerprestasi10 list = new MahasiswaBerprestasi10();
-        int jumMhs = 5;
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+        
         for (int i = 1; i <= jumMhs; i++) {
             System.out.println("--Mahasiswa ke-" + i + " --");
             System.out.print("NIM   : ");
